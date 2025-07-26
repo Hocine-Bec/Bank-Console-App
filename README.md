@@ -1,93 +1,68 @@
 # Bank Management Console Application
 
-## Project Overview
+A complete console-based banking system written in C++, designed to demonstrate advanced Object-Oriented Programming (OOP) concepts and professional software architecture. This practice project simulates real-world banking operations including client management, transactions, currency handling, and user administration.
 
-This C++ Bank Management Console Application demonstrates advanced Object-Oriented Programming (OOP) principles, showcasing a robust and maintainable software design with a strong emphasis on separation of concerns.
+## 📌 Features
 
-## Key Technical Highlights
+### 🔐 Authentication & Security
+- Secure login system with PIN encryption
+- Role-based access control (Admin/User)
+- Login attempt logging and session management
 
-- **Language**: C++
-- **Architecture**: Modular design with clear separation between UI and business logic
-- **Data Storage**: File-based persistent storage
-- **Security**: Secure login mechanism with admin contact on repeated login failures
+### 👤 Client Management
+- Add, update, delete, search, and list bank clients
+- Display total client balances
 
-## Features
+### 💰 Transactions
+- Deposit, withdraw, and transfer funds
+- Full transaction audit logging
+- Transfer history tracking
 
-### 1. Client Management
-- Show Client List
-- Add New Client
-- Update Client Information
-- Delete Client
-- Find Client Details
+### 💱 Currency Management
+- List and search exchange rates
+- Update currency rates
+- Currency conversion calculator
 
-### 2. Transaction Management
-- Deposit Funds
-- Withdraw Funds
-- Show Total Balances
-- Transfer Money Between Accounts
-- View Transfer Records
+### 👥 User Administration
+- Manage system users (add, edit, delete)
+- Role assignment and access restrictions
 
-### 3. User Administration
-- View Users List
-- Add New User
-- Update User Information
-- Delete User
-- Find User Details
+## 🛠 Architecture
 
-### 4. Additional System Features
-- Login History Tracking
-- Currency Management
-  - View Currencies List
-  - Find Currency Details
-  - Update Currency Rates
-  - Currency Converter/Calculator
-- Secure Logout Mechanism
-- Application Exit Option
+- **OOP Design:** Inheritance, polymorphism, encapsulation
+- **Separation of Concerns:** UI, business logic, and persistence layers
+- **Modular Structure:** Reusable screen and utility classes
+- **Data Persistence:** Text files with structured delimiters for clients, users, currencies, and logs
 
-## System Security
+## 📂 Data Files
 
-- Robust login security system
-- Multiple failed login attempts result in system lockout
-- Prompt to contact administrators for account access
+| File Name         | Purpose                     |
+|------------------|-----------------------------|
+| `Clients.txt`     | Stores client account data  |
+| `Users.txt`       | Stores user credentials     |
+| `Currencies.txt`  | Stores exchange rate data   |
+| `TransfersLog.txt`| Transaction audit logs      |
+| `LoginRegister.txt`| Authentication history     |
 
-## Technical Design Principles
+## 🧪 Technologies
 
-- **Object-Oriented Programming (OOP)**
-- **Separation of Concerns**
-- **Modular Architecture**
-- **Clean, Maintainable Code**
+- **Language:** C++
+- **Environment:** Console application
+- **Build System:** Visual Studio (.sln, .vcxproj)
 
-## Prerequisites
-
-- C++ Compiler (C++11 or later recommended)
-- Standard C++ Libraries
-
-## Getting Started
-
-## Getting Started
+## 🚀 Getting Started
 
 1. Clone the repository
-2. Compile the source files
-3. Run the executable
-4. Login with sample credentials:
-   - Username: Admin
-   - Password: 1234
-    
-5. Explore the application features
+2. Open the solution in Visual Studio
+3. Build and run `Practice File.cpp`
+4. Use the following credentials to test:
+   - **Username:** Admin
+   - **Password:** 1234
 
+## 📄 Project Structure
 
-## Contributing
+- `clsLoginScreen`, `clsMainScreen`, `clsClientListScreen`, etc. – UI Layer
+- `clsBankClient`, `clsUser`, `clsCurrency` – Business Logic
+- `clsInputValidate`, `clsString`, `clsDate` – Utility Helpers
 
-Contributions, issues, and feature requests are welcome. Feel free to check the issues page.
-
-<hr>
-
-🤳 Connect with me:
-[<img align="left" alt="Hocine Bechebil | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Hocine Bechebil | WhatsApp" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/whatsapp.svg" />][whatsapp]
-[<img align="left" alt="Hocine Bechebil | Email" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />][email]
-
-[linkedin]: https://www.linkedin.com/in/hocine-bechebil
-[whatsapp]: https://wa.me/+213770993463
-[email]: mailto:Bechebil.Houcin@gmail.com
-
+> ✅ **Disclaimer:** This project is intended for educational and demonstration purposes only.
